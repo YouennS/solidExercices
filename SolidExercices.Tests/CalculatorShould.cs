@@ -14,6 +14,14 @@ namespace SolidExercices.Tests
         }
 
         [Test]
+        public void CalculeSommes()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate("1+2,3+4+1,2");
+            Check.That(result).IsEqualTo(8.5);
+        }
+
+        [Test]
         public void CalculeSoustraction()
         {
             var calculator = new Calculator();
