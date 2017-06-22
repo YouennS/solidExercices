@@ -7,26 +7,26 @@ namespace SolidExercices
     {
         readonly char[] _operations={'+','-','*','/'};
 
-        public double Calculate(string operation)
+        public decimal Calculate(string operation)
         {
             char typeOperation = FindTypeOperation(operation);
             string[] nombres = operation.Split(typeOperation);
-            double result = Convert.ToDouble(nombres[0]);
+            decimal result = Convert.ToDecimal(nombres[0]);
             for (int i = 1; i < nombres.Length; i++)
             {
                 switch (typeOperation)
                 {
                     case '+':
-                        result += Convert.ToDouble(nombres[i]);
+                        result += Convert.ToDecimal(nombres[i]);
                         break;
                     case '-':
-                        result -= Convert.ToDouble(nombres[i]);
+                        result -= Convert.ToDecimal(nombres[i]);
                         break;
                     case '*':
-                        result *= Convert.ToDouble(nombres[i]);
+                        result *= Convert.ToDecimal(nombres[i]);
                         break;
                     case '/':
-                        result /= Convert.ToDouble(nombres[i]);
+                        result /= Convert.ToDecimal(nombres[i]);
                         break;
                 }
                 
@@ -41,7 +41,7 @@ namespace SolidExercices
                 if (operation.Contains(_operations[i]))
                     return _operations[i];
             }
-            return '+';
+            throw new Exception("Type d'opération inconnu");
         }
     }
 }
