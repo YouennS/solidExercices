@@ -17,8 +17,8 @@ namespace SolidExercices.Tests
         public void CalculeSoustraction()
         {
             var calculator = new Calculator();
-            var result = calculator.Calculate("4,3-2,2");
-            Check.That(result).IsEqualTo(2.1);
+            var result = calculator.Calculate("4-2");
+            Check.That(result).IsEqualTo(2);
         }
 
         [Test]
