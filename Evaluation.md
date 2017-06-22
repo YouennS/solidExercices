@@ -24,7 +24,7 @@ Les interfaces
 Q3)
 On ajoute un niveau d'abstraction à notre calculateur
 Q4)
-
+Quand une opération échoue, tous s'arrete
 Q5)
 On ajoute un niveau d'abstraction à notre calculateur
 Q6)

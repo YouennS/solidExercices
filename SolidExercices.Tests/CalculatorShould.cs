@@ -73,5 +73,12 @@ namespace SolidExercices.Tests
             var calculator = new Calculator();
             Check.ThatCode(() => calculator.Calculate("1!!:mo2,3")).Throws<Exception>().WithMessage("Type d'opération inconnu");
         }
+
+        [Test]
+        public void CalculatorTrainerTest()
+        {
+            CalculatorTrainer ct = new CalculatorTrainer();
+            ct.Run();
+        }
     }
 }
