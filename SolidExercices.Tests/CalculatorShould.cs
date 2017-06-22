@@ -29,6 +29,13 @@ namespace SolidExercices.Tests
             var result = calculator.Calculate("4-2");
             Check.That(result).IsEqualTo(2);
         }
+        [Test]
+        public void CalculeSoustractions()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate("4-2-1");
+            Check.That(result).IsEqualTo(1);
+        }
 
         [Test]
         public void CalculeMultiplication()
@@ -37,6 +44,13 @@ namespace SolidExercices.Tests
             var result = calculator.Calculate("3*4");
             Check.That(result).IsEqualTo(12);
         }
+        [Test]
+        public void CalculeMultiplications()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate("3*4*10");
+            Check.That(result).IsEqualTo(120);
+        }
 
         [Test]
         public void CalculeDivision()
@@ -44,6 +58,13 @@ namespace SolidExercices.Tests
             var calculator = new Calculator();
             var result = calculator.Calculate("15/3");
             Check.That(result).IsEqualTo(5);
+        }
+        [Test]
+        public void CalculeDivisions()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate("16/2/4");
+            Check.That(result).IsEqualTo(2);
         }
 
         [Test]
