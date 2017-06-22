@@ -18,14 +18,14 @@ Réponses aux questions posées
 -----------------------------
 
 Q1)
-
+Créer un tableau des symbole d'opérations qu'on parcourera avec des for
 Q2)
-
+Les interfaces
 Q3)
-
+On ajoute un niveau d'abstraction à notre calculateur
 Q4)
 
 Q5)
-
+On ajoute un niveau d'abstraction à notre calculateur
 Q6)
  

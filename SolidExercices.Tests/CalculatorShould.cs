@@ -45,5 +45,12 @@ namespace SolidExercices.Tests
             var result = calculator.Calculate("15/3");
             Check.That(result).IsEqualTo(5);
         }
+
+        [Test]
+        public void OperationInconnue()
+        {
+            var calculator = new Calculator();
+            Check.ThatCode(() => calculator.Calculate("1!!:mo2,3")).Throws<Exception>().WithMessage("Type d'opération inconnu");
+        }
     }
 }
