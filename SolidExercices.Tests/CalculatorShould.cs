@@ -1,4 +1,5 @@
-﻿using NFluent;
+﻿using System;
+using NFluent;
 using NUnit.Framework;
 
 namespace SolidExercices.Tests
@@ -10,7 +11,7 @@ namespace SolidExercices.Tests
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("1+2,3");
-            Check.That(result).IsEqualTo(3.3);
+            Check.That(result).IsEqualTo(Convert.ToDecimal(3.3));
         }
 
         [Test]
@@ -18,7 +19,7 @@ namespace SolidExercices.Tests
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("1+2,3+4+1,2");
-            Check.That(result).IsEqualTo(8.5);
+            Check.That(result).IsEqualTo(Convert.ToDecimal(8.5));
         }
 
         [Test]
