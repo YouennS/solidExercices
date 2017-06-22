@@ -7,10 +7,9 @@ namespace SolidExercices
     {
         public decimal Calculate(string operation)
         {
-            char typeOperation = Operation.FindTypeOperation(operation);
-            string[] nombres = operation.Split(typeOperation);
-            
-            return Operation.Calculate(nombres,typeOperation);
+            Operation op = new Operation(operation);
+
+            return op.Calculate();
         }
     }
 }
